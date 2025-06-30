@@ -3,6 +3,10 @@ export default async function handler(req, res) {
     return res.status(405).json({ status: 'error', message: 'Method not allowed' });
   }
 
-  // Placeholder for now
-  return res.status(200).json({ status: 'success', message: 'API is working' });
+const { telegram_id, username, profile_photo, score } = req.body;
+
+if (!telegram_id || !username || !profile_photo || !score) {
+  return res.status(400).json({ status: 'error', message: 'Missing fields' });
 }
+
+return res.status(200).json({ status: 'success', message: 'Received fields' });
