@@ -1,1 +1,10 @@
 node_modules
+# Node / Next.js build
+.next
+node_modules
+
+# macOS
+.DS_Store
+
+# Env variables
+.env*
