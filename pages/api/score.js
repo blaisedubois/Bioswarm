@@ -64,7 +64,8 @@ res.setHeader('Access-Control-Allow-Headers', '*');
       ]);
 
     if (insertError) {
-      console.error('Database insert error:', insertError);
+      console.error('Database insert error:', JSON.stringify(insertError, null, 2));
+
       return res.status(500).json({ status: 'error', message: 'Database insert error' });
     }
 
