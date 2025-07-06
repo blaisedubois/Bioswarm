@@ -57,6 +57,7 @@ export default async function handler(req, res) {
   if (
     !telegram_id ||
     !username ||
+    !profile_photo ||
     isNaN(score)
   ) {
     console.error('Validation failed: Missing or invalid fields', req.body);
