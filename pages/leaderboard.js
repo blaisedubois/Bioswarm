@@ -63,7 +63,7 @@ export default function Leaderboard() {
           fontFamily: "'Impact', 'Arial Black', sans-serif",
         }}
       >
-        BIOSWARM LEADERBOARD
+        BIOSWARM TOP SCORES TODAY
       </h1>
       <ol style={{ paddingLeft: '1.5rem' }}>
         {scores.map((player, index) => (
