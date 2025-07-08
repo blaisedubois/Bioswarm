@@ -1,7 +1,7 @@
 {
-	"name": "bioswarm",
-	"short_name": "bioswarm",
-	"description": "Bugs vs Bots game for telegram",
+	"name": "Bioswarm",
+	"short_name": "Bioswarm",
+	"description": "Bugs V Bots",
 	"start_url": "index.html",
 	"display": "fullscreen",
 	"orientation": "landscape",
