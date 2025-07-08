@@ -73,7 +73,7 @@ export default function Leaderboard() {
               display: 'flex',
               alignItems: 'center',
               marginBottom: '1.3rem',
-              padding: '1rem 1.5rem',
+              padding: '1rem 1.5rem', // This gives 1.5rem padding on left and right
               borderRadius: '12px',
               background:
                 index % 2 === 0
@@ -89,7 +89,7 @@ export default function Leaderboard() {
               style={{
                 width: '3rem',
                 textAlign: 'center',
-                marginRight: '1rem', /* Reduced from 1.5rem */
+                marginRight: '1rem',
                 fontWeight: '900',
                 fontSize: '1.6rem',
                 color: '#9aff72',
@@ -115,7 +115,7 @@ export default function Leaderboard() {
             <div style={{ flexGrow: 1, userSelect: 'text' }}>{player.username}</div>
             <div
               style={{
-                minWidth: '4rem', /* Reduced from 5rem */
+                // minWidth: '4rem', /* REMOVED THIS LINE */
                 textAlign: 'right',
                 color: '#9aff72',
                 fontSize: '1.5rem',
