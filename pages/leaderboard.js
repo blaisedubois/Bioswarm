@@ -89,7 +89,7 @@ export default function Leaderboard() {
               style={{
                 width: '3rem',
                 textAlign: 'center',
-                marginRight: '1.5rem',
+                marginRight: '1rem', /* Reduced from 1.5rem */
                 fontWeight: '900',
                 fontSize: '1.6rem',
                 color: '#9aff72',
@@ -115,7 +115,7 @@ export default function Leaderboard() {
             <div style={{ flexGrow: 1, userSelect: 'text' }}>{player.username}</div>
             <div
               style={{
-                minWidth: '5rem',
+                minWidth: '4rem', /* Reduced from 5rem */
                 textAlign: 'right',
                 color: '#9aff72',
                 fontSize: '1.5rem',
