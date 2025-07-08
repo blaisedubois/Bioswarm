@@ -97,6 +97,7 @@ export default function Leaderboard() {
             >
               #{index + 1}
             </span>
+            {/*
             <img
               src={player.profile_photo}
               alt={player.username}
@@ -109,6 +110,8 @@ export default function Leaderboard() {
                 border: '3px solid #6dfc6d',
               }}
             />
+            */}
+
             <div style={{ flexGrow: 1, userSelect: 'text' }}>{player.username}</div>
             <div
               style={{
