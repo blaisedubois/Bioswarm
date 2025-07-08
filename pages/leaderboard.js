@@ -73,16 +73,16 @@ export default function Leaderboard() {
               display: 'flex',
               alignItems: 'center',
               marginBottom: '1.3rem',
-              padding: '1rem 1.5rem', // This gives 1.5rem padding on left and right
+              padding: '1rem 1.5rem',
               borderRadius: '12px',
               background:
                 index % 2 === 0
                   ? 'linear-gradient(90deg, #7a1fff 0%, #a24aff 100%)'
                   : 'linear-gradient(90deg, #4c0082 0%, #7a1fff 100%)',
               boxShadow: 'inset 0 0 15px #7200ff',
-              color: '#c7ff6e',
-              fontWeight: 'bold',
-              fontSize: '1.25rem',
+              color: '#c7ff6e', // Base color for li text (username will override this)
+              fontWeight: 'bold', // Base font weight for li text (username will override this)
+              fontSize: '1.25rem', // Base font size for li text (username will override this)
             }}
           >
             <span
@@ -112,10 +112,18 @@ export default function Leaderboard() {
             />
             */}
 
-            <div style={{ flexGrow: 1, userSelect: 'text' }}>{player.username}</div>
             <div
               style={{
-                // minWidth: '4rem', /* REMOVED THIS LINE */
+                flexGrow: 1,
+                userSelect: 'text',
+                fontWeight: 'normal', // Make username not bold
+                fontSize: '1rem',    // Make username smaller
+              }}
+            >
+              {player.username}
+            </div>
+            <div
+              style={{
                 textAlign: 'right',
                 color: '#9aff72',
                 fontSize: '1.5rem',
